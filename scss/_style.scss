@@ -1,0 +1,67 @@
+.s-1 {
+
+    padding: 50px 0;
+    background-color: lightcyan;
+
+
+    .container {
+        // @include width-params ($main-container);
+        // margin: 0 auto;
+
+        @extend %container-props;
+
+        & > h1 {
+            font-size: $main-title;
+            color: darkslategray;
+            margin-bottom: 20px;
+        }
+         .content {
+            @include flex-props(space-between, flex-start,);
+            & > img {
+                width: 40%;
+                border-radius: 12px;
+            }
+            & > p {
+                width: 50%;
+                font-size: $section-text;
+                text-transform: capitalize;
+                line-height: 20px;
+                letter-spacing: 1px;
+                word-spacing: 5px;
+
+                &::after {
+                    content: '\2600';
+                    
+                }
+
+                &::first-letter {
+                    font-size: 30px;
+                    color: darkblue;
+                }
+            }
+         }
+    }
+}
+.s-2 {
+    padding: 50px 0;
+    background-color: lightgoldenrodyellow;
+    .container {
+        @extend %container-props;
+        @include flex-props ();
+        & > .block{
+            @include sizesXY (300px);
+            
+
+            &:first-child {
+                background-color: lightgreen;
+            }
+            &:nth-child(2) {
+                background-color: lightsalmon;
+            }
+            &:last-child {
+                background-color: lightskyblue;
+            }
+        }
+    }
+    
+}

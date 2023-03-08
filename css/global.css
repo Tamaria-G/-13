@@ -1,0 +1,119 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.s-2 .container, .s-1 .container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.s-1 {
+  padding: 50px 0;
+  background-color: lightcyan;
+}
+.s-1 .container > h1 {
+  font-size: 42px;
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+.s-1 .container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.s-1 .container .content > img {
+  width: 40%;
+  border-radius: 12px;
+}
+.s-1 .container .content > p {
+  width: 50%;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 20px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+.s-1 .container .content > p::after {
+  content: "☀";
+}
+.s-1 .container .content > p::first-letter {
+  font-size: 30px;
+  color: darkblue;
+}
+
+.s-2 {
+  padding: 50px 0;
+  background-color: lightgoldenrodyellow;
+}
+.s-2 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.s-2 .container > .block {
+  width: 300px;
+  height: 300px;
+}
+.s-2 .container > .block:first-child {
+  background-color: lightgreen;
+}
+.s-2 .container > .block:nth-child(2) {
+  background-color: lightsalmon;
+}
+.s-2 .container > .block:last-child {
+  background-color: lightskyblue;
+}/*# sourceMappingURL=global.css.map */
