@@ -14,6 +14,11 @@
             font-size: $main-title;
             color: darkslategray;
             margin-bottom: 20px;
+
+            @media (max-width: $tablet-break){
+                text-align: center;
+                
+            }
         }
          .content {
             @include flex-props(space-between, flex-start,);
@@ -38,8 +43,28 @@
                     font-size: 30px;
                     color: darkblue;
                 }
+
+                @media (max-width: $mobile-break) {
+                    font-size: 14px;
+                    
+                }
             }
-         }
+
+            @media (max-width: $tablet-break){
+                flex-direction: column;
+                align-items: center;
+
+                & > img, & > p {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                & > img {
+                    max-height: 300px;
+                    object-fit: cover;
+                }
+                
+            }
+        }
     }
 }
 .s-2 {
@@ -62,6 +87,22 @@
                 background-color: lightskyblue;
             }
         }
+
+        @media (max-width: $tablet-break) {
+            flex-direction: column;
+            
+            & > .block:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: $mobile-break) {
+            & > .block {
+                @include sizesXY(250px);
+            }
+        }
+
+        
     }
     
 }

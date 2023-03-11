@@ -58,6 +58,11 @@ input {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .s-2 .container, .s-1 .container {
+    width: 90%;
+  }
+}
 
 .s-1 {
   padding: 50px 0;
@@ -67,6 +72,11 @@ input {
   font-size: 42px;
   color: darkslategray;
   margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .s-1 .container > h1 {
+    text-align: center;
+  }
 }
 .s-1 .container .content {
   display: flex;
@@ -93,6 +103,26 @@ input {
   font-size: 30px;
   color: darkblue;
 }
+@media (max-width: 480px) {
+  .s-1 .container .content > p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .s-1 .container .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-1 .container .content > img, .s-1 .container .content > p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .s-1 .container .content > img {
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .s-2 {
   padding: 50px 0;
@@ -116,4 +146,18 @@ input {
 }
 .s-2 .container > .block:last-child {
   background-color: lightskyblue;
+}
+@media (max-width: 1024px) {
+  .s-2 .container {
+    flex-direction: column;
+  }
+  .s-2 .container > .block:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .s-2 .container > .block {
+    width: 250px;
+    height: 250px;
+  }
 }/*# sourceMappingURL=global.css.map */
